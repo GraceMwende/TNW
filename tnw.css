@@ -1,0 +1,40 @@
+.nav-bar {
+  background-color: black;
+  padding: 0.5%;
+}
+.right-nav {
+  float: right;
+}
+.nav-bar-2 {
+  clear: both;
+  display: flex;
+  padding: 0.7%;
+  align-items: center;
+  background-color: whitesmoke;
+}
+.left-nav {
+  width: 60%;
+}
+.right-nav-2 {
+  width: 40%;
+  border-left: 1px solid grey;
+  align-self: space-between;
+}
+.nav-bar-2 img {
+  width: 100px;
+}
+.bottom-nav {
+  clear: both;
+  background-color: yellow;
+}
+#demo {
+  font-size: 20px;
+  color: red;
+  font-weight: bold;
+  display: inline;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}

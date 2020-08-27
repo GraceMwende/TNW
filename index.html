@@ -1,7 +1,110 @@
 <!DOCTYPE html>
 <head>
   <title>TNW</title>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="tnw.css" />
 </head>
 <html>
-  <body></body>
+  <body>
+    <nav class="nav-bar">
+      <a href="#">News</a>
+      <a href="#">Events</a>
+      <a href="#">Business</a>
+      <a href="#">Amas</a>
+      <a href="#">Spaces</a>
+      <a href="#">Term & Conditions</a>
+      <div class="right-nav">
+        <a href="#">About</a>
+        <a href="#">Advertise</a>
+        <a href="#">Jobs</a>
+        <a href="#">Contract</a>
+      </div>
+    </nav>
+
+    <nav class="nav-bar-2">
+      <div class="left-nav">
+        <a href="#">LATEST</a>
+        <a href="#">HARD FORK</a>
+        <a href="#">PLUGGED</a>
+        <a href="#">README</a>
+        <a href="#">SHIFT</a>
+        <a href="#">NEURAL</a>
+      </div>
+      <div class="right-nav-2">
+        <i class="fas fa-search"></i>
+        <img src="images/TNW2020.jpg" alt="TNW 2020" />
+        <p id="demo"></p>
+        <button>Get Tickets</button>
+      </div>
+    </nav>
+    <nav class="bottom-nav">
+      <p>
+        Join TNW2020, our 15th annual flagship event.Online.Get tickets<i
+          class="fas fa-long-arrow-alt-right"
+        ></i>
+      </p>
+    </nav>
+    <section class="news">
+      <article class="cryptography">
+        <p>Thursday-August27,2020</p>
+        <p>TNW</p>
+        <p>Tech</p>
+        <p>
+          Hey employers,forcing your<br />machine learning hires to have<br />fancy
+          degrees is dumb
+        </p>
+        <p>
+          By Dale Markowitz <i class="far fa-clock"></i> 1 hour ago
+          <i class="fas fa-share-alt-square"></i> 5
+        </p>
+      </article>
+      <section class="annual-tech">
+        <article class="annual-flagship">
+          <p>Join our annual flagship<br />event for free</p>
+        </article>
+        <article class="tech-intent">
+          <p>TECH</p>
+          <p>
+            How to write a 'commander's<br />'intent' to lead your team
+            through<br />a crisis
+          </p>
+          <p>
+            By Built In <i class="far fa-clock"></i> 2 hours ago
+            <i class="fas fa-share-alt-square"></i> 6
+          </p>
+        </article>
+      </section>
+    </section>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("oct 1, 2020 15:7:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML =
+          days + ": " + hours + ": " + minutes + ": " + seconds + ": ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+    </script>
+  </body>
 </html>
