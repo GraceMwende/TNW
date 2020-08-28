@@ -1,0 +1,164 @@
+body:after {
+  content: "less than 320";
+  font: bold 200% georgia;
+  position: fixed;
+  bottom: 60px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: hsla(1, 60%, 40%, 0.7);
+}
+@media only screen and (min-width: 320px) {
+  body:after {
+    content: "320 to 480";
+    background-color: hsla(90, 60%, 40%, 0.7);
+  }
+}
+@media only screen and (min-width: 480px) {
+  body:after {
+    content: "480 to 768";
+    background-color: hsla(180, 60%, 40%, 0.7);
+  }
+}
+@media only screen and (min-width: 768px) {
+  body:after {
+    content: "768 to 1024";
+    background-color: hsla(270, 60%, 40%, 0.7);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body:after {
+    content: "1024 and up";
+    background-color: hsla(360, 60%, 40%, 0.7);
+  }
+}
+@media screen and (max-width: 767px) {
+  /* .small-browser {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+  } */
+  .small-browser img {
+    width: 20%;
+  }
+  .nav-bar,
+  .nav-bar-2 {
+    display: none;
+  }
+
+  .bottom-nav {
+    padding: 2%;
+    position: fixed;
+    width: 100%;
+  }
+  .latest-news {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .latest-news img {
+    float: left;
+    width: 30%;
+  }
+  .news {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .whole {
+    margin: 10% 0;
+  }
+  .latest-funding {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    position: relative;
+  }
+  .synthego img {
+    position: absolute;
+    width: 5%;
+    top: 28%;
+    left: 2%;
+  }
+  .barn img {
+    position: absolute;
+    width: 5%;
+    top: 53%;
+    left: 2%;
+  }
+  .relia img {
+    position: absolute;
+    width: 5%;
+    top: 78%;
+    left: 2%;
+  }
+  .arts {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .latest-tech .positioning {
+    width: 18%;
+  }
+  #footer-1 {
+    padding: 4%;
+  }
+  #footer-2 {
+    padding: 4%;
+  }
+}
+@media screen and (max-width: 1113px) {
+  .nav-bar-2 .right-nav-2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .nav-bar-2 .right-nav-2 {
+    display: none;
+  }
+  .latest-news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+  }
+  .whole,
+  .arts {
+    margin: 5% 0;
+  }
+  .latest-funding {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    position: relative;
+  }
+  .synthego img {
+    position: absolute;
+    width: 5%;
+    top: 3%;
+    left: 35%;
+  }
+  .barn img {
+    position: absolute;
+    width: 5%;
+    top: 3%;
+    left: 68%;
+  }
+  .relia img {
+    position: absolute;
+    width: 5%;
+    top: 53%;
+    left: 1%;
+  }
+}
+#footer-1 {
+  padding: 4%;
+}
+#footer-2 {
+  padding: 4%;
+}
+@media screen and (max-width: 767px) {
+  .nav-bar .right-nav {
+    display: none;
+  }
+}
