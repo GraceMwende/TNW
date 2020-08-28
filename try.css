@@ -1,47 +1,4 @@
-body:after {
-  content: "less than 320";
-  font: bold 200% georgia;
-  position: fixed;
-  bottom: 60px;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  background-color: hsla(1, 60%, 40%, 0.7);
-}
-@media only screen and (min-width: 320px) {
-  body:after {
-    content: "320 to 480";
-    background-color: hsla(90, 60%, 40%, 0.7);
-  }
-}
-@media only screen and (min-width: 480px) {
-  body:after {
-    content: "480 to 768";
-    background-color: hsla(180, 60%, 40%, 0.7);
-  }
-}
-@media only screen and (min-width: 768px) {
-  body:after {
-    content: "768 to 1024";
-    background-color: hsla(270, 60%, 40%, 0.7);
-  }
-}
-@media only screen and (min-width: 1024px) {
-  body:after {
-    content: "1024 and up";
-    background-color: hsla(360, 60%, 40%, 0.7);
-  }
-}
 @media screen and (max-width: 767px) {
-  /* .small-browser {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-  } */
-  .small-browser img {
-    width: 20%;
-  }
   .nav-bar,
   .nav-bar-2 {
     display: none;
